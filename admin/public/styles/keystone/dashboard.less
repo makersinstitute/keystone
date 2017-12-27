@@ -3,7 +3,14 @@
 // ==============================
 
 
-
+//TAMBAHAN
+// ==============================
+.dashboard-groupss {
+/*	margin-bottom: 20px;
+	padding-left: 30px;*/
+	display: flex;
+	flex-wrap: wrap; 
+}
 
 // Model Group
 // ------------------------------
@@ -13,8 +20,10 @@
 .dashboard-group {
 	margin-bottom: 20px;
 	padding-left: 30px;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
 }
-
 
 // header
 
@@ -81,6 +90,8 @@
 .dashboard-group__lists {
 	&:extend(.u-clearfix all);
 	margin: 0 -10px 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -92,9 +103,9 @@
 	position: relative;
 	width: 100%;
 
-	@media (min-width: @screen-sm) { width: 50%; }
-	@media (min-width: @screen-md) { width: 33%; }
-	@media (min-width: @screen-lg) { width: 25%; }
+	@media (min-width: @screen-sm) { width: 75%; }
+	@media (min-width: @screen-md) { width: 66%; }
+	@media (min-width: @screen-lg) { width: 50%; }
 }
 
 

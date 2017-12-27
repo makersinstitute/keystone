@@ -58,7 +58,7 @@ var HomeView = React.createClass({
 							spinner={spinner}
 						/>
 					) : (
-						<div>
+						<div className="dashboard-groupss">
 							{/* Render nav with sections */}
 							{Keystone.nav.sections.map((navSection) => {
 								return (
