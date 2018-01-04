@@ -109,7 +109,7 @@ footer {
 	padding: 0 10px 20px;
 	position: relative;
 	width: 100%;
-
+	
 	@media (min-width: @screen-sm) { width: 75%; }
 	@media (min-width: @screen-md) { width: 66%; }
 	@media (min-width: @screen-lg) { width: 50%; }
@@ -120,6 +120,7 @@ footer {
 
 .dashboard-group__list-tile {
 	.transition( box-shadow 80ms linear );
+    border-radius: 2px;
 	background-color: @dashboard-list-bg;
 	border-radius: @border-radius-base;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(0,0,0,0.1);
@@ -148,10 +149,10 @@ footer {
 .dashboard-group__list-inner:hover >
 .dashboard-group__list-tile {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075), 0 0 0 1px fade(@link-color, 50%);
-	background-color: #FEBF20;
-    border-radius: 2px;
+	background-color: whitesmoke;
 	outline: none;
 	text-decoration: none;
+    transition: .6s;
 }
 
 .dashboard-group__list-label {
