@@ -12,6 +12,9 @@
 	flex-wrap: wrap; 
 }
 
+footer {
+	background-color: #4B4B4B;
+}
 // Model Group
 // ------------------------------
 
@@ -35,17 +38,21 @@
 }
 .dashboard-heading {
 	font-size: 2em;
-	font-weight: 300;
+	color:#FEBF20;
+    font-weight: 900;
 }
 
+.dashboard-heading:before {
+    content: "||| "
+}
 
 // headings
 
 .dashboard-group__heading {
-	color: @gray-light;
 	font-size: 1.5em;
-	font-weight: 500;
 	margin-bottom: .75em;
+	color: whitesmoke;
+    font-weight: 900;
 }
 .dashboard-group__heading-icon {
 	color: inherit;
@@ -141,7 +148,8 @@
 .dashboard-group__list-inner:hover >
 .dashboard-group__list-tile {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075), 0 0 0 1px fade(@link-color, 50%);
-	color: @gray-light;
+	background-color: #FEBF20;
+    border-radius: 2px;
 	outline: none;
 	text-decoration: none;
 }
@@ -150,15 +158,19 @@
 	.transition( border-color 80ms linear );
 	.u-text-truncate();
 	border-bottom: 1px solid transparent;
-	color: @link-color;
+	// color: @link-color;
 	display: inline-block;
-	font-size: 1.25em;
-	font-weight: 500;
+	// font-size: 1.25em;
 	padding-bottom: .05em; // prevent decenders being cropped
 	margin-bottom: .2em;
+	color: #000;
+    font-weight: 455;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 .dashboard-group__list-count {
 	padding-bottom: .2em;
+	color: whitesmoke;
 }
 
 
@@ -166,7 +178,8 @@
 
 .dashboard-group__list-inner:hover >
 .dashboard-group__list-create {
-	background-color: darken(@gray-lighter, 6%);
+	// background-color: darken(@gray-lighter, 6%);
+	background-color: black;
 }
 .dashboard-group__list-inner:active >
 .dashboard-group__list-create {
@@ -200,3 +213,4 @@
 		background-color: darken(@app-success, 6%);
 	}
 }
+
